@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Exploding Box Productions">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" href="../lib/DialogBox.css?v=1">
+  <script type="text/javascript" src="mootools.js"></script>
+  <script type="text/javascript" src="../lib/DialogBox.js"></script>
+  <script type="text/javascript">
+    window.addEvent('domready', function(){
+      new DialogBox({
+        message: "This is a <strong>Dialog Box</strong>",
+        primary: ['Ok'], //[optional] Adds a primary class to this button
+        identifier: 'my_dialogue', //[optional] Adds a class to the dialogue box for styling hooks
+        events: {
+          'Cancel': function(){},
+          'Ok': function(){
+            alert('the ok button was clicked');
+          }
+        }
+      });      
+    });
+  </script>
+</head>
+  <body>
+  </body>
+</html>

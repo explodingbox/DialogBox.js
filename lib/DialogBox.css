@@ -1,0 +1,47 @@
+.dialog_box_container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999999;
+}
+
+.dialog_box.my_dialogue {
+  background-color: #eee;
+}
+
+.dialog_box {
+	width: 30em;
+  min-height: 5em;
+	position: absolute; /*Coords dynamically determined*/
+	background-color: #fafafa;
+	-webkit-box-shadow: 0em 0.5em 1em rgba(0,0,0,0.5);
+}
+
+.dialog_box .dialog_box_message {
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.dialog_box.dismissed {
+	-webkit-transition: opacity 0.2s;
+	opacity: 0;
+}
+
+
+.dialog_box .dialog_actions {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.dialog_box .dialog_actions button {
+  float: right;
+}
+
+.dialog_box button.primary {
+	font-weight: bold;
+}
